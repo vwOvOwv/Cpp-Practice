@@ -1,6 +1,6 @@
 // http://bailian.openjudge.cn/practice/3254/
 
-// simulate with list
+// simulation with list
 
 #include <cstddef>
 #include <iostream>
