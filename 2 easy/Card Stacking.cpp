@@ -9,27 +9,27 @@
 
 using namespace std;
 
-deque<int> queue;
+deque<int> q;
 int N, K, P;
 vector<int> ans;
 
 int main(){
     cin >> N >> K >> P;
     for(int i = 1; i <= K; i++){
-        queue.push_back(i);
+        q.push_back(i);
     }
     int cur = 0;
-    while(!queue.empty()) {
-        int cur_card = queue.front();
-        queue.pop_front();
+    while(!q.empty()) {
+        int cur_card = q.front();
+        q.pop_front();
         cur = (cur + 1) % N;
         if (cur == 0){
             // cout << cur_card << endl;
             ans.push_back(cur_card);
         }
         for(int i = 0; i < P; i++){
-            queue.push_back(queue.front());
-            queue.pop_front();
+            q.push_back(q.front());
+            q.pop_front();
         }
     }
     sort(ans.begin(), ans.end());
