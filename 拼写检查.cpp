@@ -1,5 +1,4 @@
 // http://dsa.openjudge.cn/linearlist/0201/
-// enumeration
 
 #include <cstdlib>
 #include <iostream>

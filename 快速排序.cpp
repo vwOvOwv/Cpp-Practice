@@ -7,7 +7,7 @@ using namespace std;
 
 vector<int> A = {0,2,3,10,4,5,9,7,8,6,1};
 
-int qs_partition(vector<int> &A, int l, int r){
+int partition(vector<int> &A, int l, int r){
     int i = l, j = r;
     while(true){
         while(A[j] > A[l]){
@@ -30,7 +30,7 @@ int qs_partition(vector<int> &A, int l, int r){
 void quick_sort(vector<int> &A, int l, int r){
     if(l > r)
         return;
-    int pivot = qs_partition(A, l, r);
+    int pivot = partition(A, l, r);
     int tmp = A[pivot];
     A[pivot] = A[l];
     A[l] = tmp;

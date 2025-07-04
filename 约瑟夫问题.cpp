@@ -15,9 +15,8 @@ int n, m;
 
 int josephus(int n, int m){
     int res = 1;
-    for(int i = 1; i <= n; i++){    // i: current number of people
-        res = (res + m - 1) % i + 1; 
-        // cout << res + 1 << endl;
+    for(int i = 1; i <= n; i++){    // i: current number of people（递归变递推，人数每次+1）
+        res = (res + m - 1) % i + 1;
     }
     return res;
 }

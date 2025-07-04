@@ -47,7 +47,7 @@ int cal_flip_count(int goal, int init_flip){
                 }
 
                 if(j == 0){
-                tmp_board[i][j + 1] ^= 1;
+                    tmp_board[i][j + 1] ^= 1;
                 }
                 else if(j == N - 1){
                     tmp_board[i][j - 1] ^= 1;

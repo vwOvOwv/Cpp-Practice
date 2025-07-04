@@ -89,7 +89,6 @@ int main(){
             else{
                 tmp += str2long[cur];
             }
-            // cout << ans << endl;
         }
         ans += tmp;
         cout << ans << endl;

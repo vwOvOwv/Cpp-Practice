@@ -1,5 +1,5 @@
 // http://bailian.openjudge.cn/practice/1007/
-// 分治，归并排序模版题
+// 逆序对计数，归并排序模版
 
 #include <iostream>
 #include <map>

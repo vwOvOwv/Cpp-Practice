@@ -8,7 +8,7 @@ using namespace std;
 int min_time = 0x7fffffff;
 int N;
 vector<vector<int> > dis;
-vector<unordered_map<unsigned, int> > visit_time_record;
+vector<unordered_map<unsigned, int>> visit_time_record;
 unsigned visited = 0;
 
 int get_visited_bit(int idx){

@@ -1,7 +1,7 @@
 // http://dsa.openjudge.cn/linearlist/0215/
 // recursion
 // f(M, N) = f(M, N - 1) + f(M - N, N)
-// 1. At least one plate doest not have any apple.
+// 1. At least one plate does not have any apple.
 // 2. All plates have apples.
 // Never consider anything that has to do with the **order** of different plates
 

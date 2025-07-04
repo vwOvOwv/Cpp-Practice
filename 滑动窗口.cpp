@@ -12,7 +12,7 @@ int main(){
     cin >> n >> k;
     vector<int> nums(n, 0), max_indices, min_indices;
     deque<int> max_idx; // 保存可能成为当前窗口最大值的元素下标（按照下标从小到大的顺序）
-    deque<int> min_idx; // 保存可能成为当前窗口最小值的元素下标
+    deque<int> min_idx; // 保存可能成为当前窗口最小值的元素下标（按照下标从小到大的顺序）
 
     int cur = 0;
     for(; cur < k; cur++){
@@ -31,7 +31,7 @@ int main(){
     for(; cur < n; cur++){
         cin >> nums[cur];
 
-        // 去除已经不在窗口里的元素下标
+        // 先去除已经不在窗口里的元素下标
         while(!max_idx.empty() && cur - k >= max_idx.front())
             max_idx.pop_front();
         while(!min_idx.empty() && cur - k >= min_idx.front())

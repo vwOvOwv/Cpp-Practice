@@ -6,7 +6,7 @@ using namespace std;
 
 void hanoi(int start_plate_idx, int n_plates, char start, char target, char medium){
     if(n_plates == 1){
-        cout << start << "->" <<start_plate_idx << "->" << target << endl;
+        cout << start << "->" << start_plate_idx << "->" << target << endl;
         return;
     }
     hanoi(start_plate_idx, n_plates - 1, start, medium, target);
